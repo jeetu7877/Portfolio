@@ -2,8 +2,7 @@
 const texts = [
     "Frontend Developer",
     "Web Designer",
-    "UI/UX Learner",
-    "Freelancer"
+    "Problem Solver"
 ];
 
 let speed = 120;
@@ -133,3 +132,20 @@ const form = document.querySelector(".contact-form");
   form.addEventListener("submit", () => {
     alert("Your message has been sent! I will contact you soon.");
   });
+
+  let readBtn = document.getElementById("readBtn");
+let moreText = document.querySelector(".more-text");
+
+readBtn.addEventListener("click", () => {
+  if(moreText.style.display === "block"){
+    moreText.style.display = "none";
+    readBtn.textContent = "Read More";
+  } else {
+    moreText.style.display = "block";
+    readBtn.textContent = "Read Less";
+  }
+});
+
+
+
+
